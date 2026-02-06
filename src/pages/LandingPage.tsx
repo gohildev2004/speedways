@@ -1,5 +1,7 @@
 import tyreImage from '../assets/Tyre.png'
-import introVideo from '../assets/speedways_intro.mp4'
+
+// Use Cloudinary CDN for video
+const introVideo = 'https://res.cloudinary.com/dwggftlyi/video/upload/v1770345490/speedways_intro-2_t8ugls.mp4'
 
 const products = [
   {
