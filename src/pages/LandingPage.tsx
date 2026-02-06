@@ -224,18 +224,18 @@ function LandingPage() {
               Select a segment to explore sizes, rims, and tread patterns tailored to your needs.
             </p>
           </div>
-          <div className="mt-10 grid gap-4 sm:mt-16 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
+          <div className="mt-10 grid grid-cols-2 gap-3 sm:mt-16 sm:gap-6 lg:grid-cols-3">
             {products.map((item, index) => (
               <article
                 key={item.title}
-                className="group relative overflow-hidden rounded-2xl bg-neutral-900/50 p-6 backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-neutral-700 hover:bg-neutral-900 sm:p-8"
+                className="group relative overflow-hidden rounded-xl bg-neutral-900/50 p-4 backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-neutral-700 hover:bg-neutral-900 sm:rounded-2xl sm:p-6 md:p-8"
               >
-                <div className="mb-3 flex items-center justify-between sm:mb-4">
-                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-neutral-800 text-xs font-semibold text-neutral-400 transition-colors group-hover:bg-neutral-700 group-hover:text-white sm:h-10 sm:w-10 sm:text-sm">
+                <div className="mb-2 flex items-center justify-between sm:mb-3 md:mb-4">
+                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-neutral-800 text-xs font-semibold text-neutral-400 transition-colors group-hover:bg-neutral-700 group-hover:text-white sm:h-8 sm:w-8 md:h-10 md:w-10 md:text-sm">
                     {String(index + 1).padStart(2, '0')}
                   </span>
                   <svg
-                    className="h-4 w-4 text-neutral-600 transition-all duration-300 group-hover:translate-x-1 group-hover:text-neutral-400 sm:h-5 sm:w-5"
+                    className="h-3 w-3 text-neutral-600 transition-all duration-300 group-hover:translate-x-1 group-hover:text-neutral-400 sm:h-4 sm:w-4 md:h-5 md:w-5"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -243,8 +243,8 @@ function LandingPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>
-                <h3 className="text-base font-semibold text-white sm:text-lg">{item.title}</h3>
-                <p className="mt-2 text-xs leading-relaxed text-neutral-400 sm:mt-3 sm:text-sm">
+                <h3 className="text-sm font-semibold leading-tight text-white sm:text-base md:text-lg">{item.title}</h3>
+                <p className="mt-1.5 text-xs leading-snug text-neutral-400 sm:mt-2 sm:text-xs sm:leading-relaxed md:mt-3 md:text-sm">
                   {item.description}
                 </p>
               </article>
@@ -256,7 +256,7 @@ function LandingPage() {
 
         <section id="about" className="px-4 py-12 sm:px-[6vw] sm:py-20">
           <div className="mx-auto max-w-6xl">
-            <div className="relative flex min-h-[400px] items-center justify-center py-12 sm:min-h-[600px] sm:py-16">
+            <div className="relative flex min-h-[450px] items-center justify-center py-12 sm:min-h-[600px] sm:py-16">
               {/* Center Text Content */}
               <div className="relative z-10 max-w-2xl px-4 text-center">
                 <p className="text-xs uppercase tracking-[0.3em] text-neutral-400">
@@ -270,51 +270,51 @@ function LandingPage() {
                 </p>
               </div>
 
-              {/* Surrounding Country Flags - Scattered - Hidden on mobile */}
-              <div className="absolute left-[5%] top-[8%] hidden md:block">
-                <div className="float-circular text-6xl transition-all hover:scale-110 lg:text-8xl" style={{ animationDuration: '10s', animationDelay: '0s' }}>
+              {/* Surrounding Country Flags - Smaller on mobile, larger on desktop */}
+              <div className="absolute left-[2%] top-[5%]">
+                <div className="float-circular text-4xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '10s', animationDelay: '0s' }}>
                   🇺🇸
                 </div>
               </div>
 
-              <div className="absolute right-[15%] top-[12%] hidden md:block">
-                <div className="float-circular text-6xl transition-all hover:scale-110 lg:text-8xl" style={{ animationDuration: '11s', animationDelay: '2s' }}>
+              <div className="absolute right-[8%] top-[8%]">
+                <div className="float-circular text-4xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '11s', animationDelay: '2s' }}>
                   🇬🇧
                 </div>
               </div>
 
-              <div className="absolute right-[1%] top-[45%] hidden md:block">
-                <div className="float-circular text-6xl transition-all hover:scale-110 lg:text-8xl" style={{ animationDuration: '13s', animationDelay: '3s' }}>
+              <div className="absolute right-[3%] top-[55%]">
+                <div className="float-circular text-3xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '13s', animationDelay: '3s' }}>
                   🇩🇪
                 </div>
               </div>
 
-              <div className="absolute bottom-[10%] right-[12%] hidden md:block">
-                <div className="float-circular text-6xl transition-all hover:scale-110 lg:text-8xl" style={{ animationDuration: '11.5s', animationDelay: '1s' }}>
+              <div className="absolute bottom-[12%] right-[5%]">
+                <div className="float-circular text-4xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '11.5s', animationDelay: '1s' }}>
                   🇦🇺
                 </div>
               </div>
 
-              <div className="absolute bottom-[5%] left-[48%] hidden md:block">
-                <div className="float-circular text-6xl transition-all hover:scale-110 lg:text-8xl" style={{ animationDuration: '10.5s', animationDelay: '4s' }}>
+              <div className="absolute bottom-[3%] left-[45%]">
+                <div className="float-circular text-3xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '10.5s', animationDelay: '4s' }}>
                   🇧🇷
                 </div>
               </div>
 
-              <div className="absolute bottom-[8%] left-[15%] hidden md:block">
-                <div className="float-circular text-6xl transition-all hover:scale-110 lg:text-8xl" style={{ animationDuration: '12.5s', animationDelay: '2.5s' }}>
+              <div className="absolute bottom-[10%] left-[8%]">
+                <div className="float-circular text-4xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '12.5s', animationDelay: '2.5s' }}>
                   🇯🇵
                 </div>
               </div>
 
-              <div className="absolute left-[1%] top-[48%] hidden md:block">
-                <div className="float-circular text-6xl transition-all hover:scale-110 lg:text-8xl" style={{ animationDuration: '11.2s', animationDelay: '1.5s' }}>
+              <div className="absolute left-[3%] top-[58%]">
+                <div className="float-circular text-3xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '11.2s', animationDelay: '1.5s' }}>
                   🇮🇳
                 </div>
               </div>
 
-              <div className="absolute right-[50%] top-[3%] hidden md:block">
-                <div className="float-circular text-6xl transition-all hover:scale-110 lg:text-8xl" style={{ animationDuration: '12.8s', animationDelay: '3.5s' }}>
+              <div className="absolute right-[45%] top-[2%]">
+                <div className="float-circular text-3xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '12.8s', animationDelay: '3.5s' }}>
                   🇨🇦
                 </div>
               </div>
