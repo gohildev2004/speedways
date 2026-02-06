@@ -1,7 +1,29 @@
+import { useEffect, useState } from 'react'
 import tyreImage from '../assets/Tyre.png'
 
 // Use Cloudinary CDN for video
 const introVideo = 'https://res.cloudinary.com/dwggftlyi/video/upload/v1770345490/speedways_intro-2_t8ugls.mp4'
+
+// Counter component
+function Counter({ target, duration = 2000 }: { target: number; duration?: number }) {
+  const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    let startTime: number | null = null
+    const step = (timestamp: number) => {
+      if (!startTime) startTime = timestamp
+      const progress = timestamp - startTime
+      const percentage = Math.min(progress / duration, 1)
+      setCount(Math.floor(percentage * target))
+      if (percentage < 1) {
+        requestAnimationFrame(step)
+      }
+    }
+    requestAnimationFrame(step)
+  }, [target, duration])
+
+  return <span>{count}</span>
+}
 
 const products = [
   {
@@ -263,7 +285,7 @@ function LandingPage() {
                   Global Reach
                 </p>
                 <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl">
-                  Shipped to 100+ Countries Worldwide
+                  Shipped to <Counter target={100} />+ Countries Worldwide
                 </h2>
                 <p className="mt-6 text-base text-neutral-400 sm:text-lg md:text-xl">
                   Trusted by distributors and businesses across six continents
