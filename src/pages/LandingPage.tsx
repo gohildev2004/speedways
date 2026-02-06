@@ -165,7 +165,7 @@ function LandingPage() {
             </nav>
 
             <div className="flex flex-1 items-center justify-center pt-12 sm:pt-16">
-              <div className="max-w-3xl space-y-12 px-2 text-center sm:space-y-8">
+              <div className="max-w-4xl space-y-12 px-2 text-center sm:space-y-8">
                 {/* Heading */}
                 <h1
                   className="text-4xl font-extrabold leading-[1.15] tracking-tight sm:text-4xl md:text-6xl xl:text-7xl"
@@ -175,7 +175,7 @@ function LandingPage() {
                 >
                   <span className="inline-block">SpeedWays Tyres.</span>
                   <br />
-                  <span className="inline-block bg-gradient-to-r from-white via-white to-white/80 bg-clip-text text-transparent">
+                  <span className="inline-block bg-linear-to-r from-white via-white to-white/80 bg-clip-text text-transparent">
                     Built for every terrain.
                   </span>
                 </h1>
@@ -193,7 +193,7 @@ function LandingPage() {
                 </p>
 
                 {/* CTA Buttons */}
-                <div className="flex justify-center gap-4 sm:gap-4">
+                <div className="flex justify-center gap-4 sm:gap-4 max-w-sm mx-auto">
                   <button className="group relative w-full overflow-hidden rounded-full bg-white px-6 py-3 text-sm font-semibold text-neutral-900 shadow-lg shadow-black/30 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-black/40 sm:w-auto sm:px-8 sm:py-3.5">
                     <span className="relative z-10 flex items-center justify-center gap-2">
                       Browse Tyres
