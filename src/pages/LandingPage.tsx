@@ -1,28 +1,53 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import tyreImage from '../assets/Tyre.png'
 
 // Use Cloudinary CDN for video
 const introVideo = 'https://res.cloudinary.com/dwggftlyi/video/upload/v1770345490/speedways_intro-2_t8ugls.mp4'
 
-// Counter component
+// Counter component with intersection observer
 function Counter({ target, duration = 2000 }: { target: number; duration?: number }) {
   const [count, setCount] = useState(0)
+  const [hasStarted, setHasStarted] = useState(false)
+  const counterRef = useRef<HTMLSpanElement>(null)
 
   useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && !hasStarted) {
+          setHasStarted(true)
+        }
+      },
+      { threshold: 0.5 }
+    )
+
+    if (counterRef.current) {
+      observer.observe(counterRef.current)
+    }
+
+    return () => observer.disconnect()
+  }, [hasStarted])
+
+  useEffect(() => {
+    if (!hasStarted) return
+
     let startTime: number | null = null
+    let animationFrameId: number
+
     const step = (timestamp: number) => {
       if (!startTime) startTime = timestamp
       const progress = timestamp - startTime
       const percentage = Math.min(progress / duration, 1)
       setCount(Math.floor(percentage * target))
       if (percentage < 1) {
-        requestAnimationFrame(step)
+        animationFrameId = requestAnimationFrame(step)
       }
     }
-    requestAnimationFrame(step)
-  }, [target, duration])
+    animationFrameId = requestAnimationFrame(step)
 
-  return <span>{count}</span>
+    return () => cancelAnimationFrame(animationFrameId)
+  }, [target, duration, hasStarted])
+
+  return <span ref={counterRef}>{count}</span>
 }
 
 const products = [
