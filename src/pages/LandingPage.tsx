@@ -118,10 +118,10 @@ function LandingPage() {
             </nav>
 
             <div className="flex flex-1 items-center justify-center pt-12 sm:pt-16">
-              <div className="max-w-3xl space-y-6 px-2 text-center sm:space-y-8">
+              <div className="max-w-3xl space-y-12 px-2 text-center sm:space-y-8">
                 {/* Heading */}
                 <h1
-                  className="text-3xl font-bold leading-[1.15] tracking-tight sm:text-4xl md:text-6xl xl:text-7xl"
+                  className="text-4xl font-extrabold leading-[1.15] tracking-tight sm:text-4xl md:text-6xl xl:text-7xl"
                   style={{
                     textShadow: '0 12px 40px rgba(0, 0, 0, 0.6), 0 4px 16px rgba(0, 0, 0, 0.4)',
                   }}
@@ -146,7 +146,7 @@ function LandingPage() {
                 </p>
 
                 {/* CTA Buttons */}
-                <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
+                <div className="flex justify-center gap-4 sm:gap-4">
                   <button className="group relative w-full overflow-hidden rounded-full bg-white px-6 py-3 text-sm font-semibold text-neutral-900 shadow-lg shadow-black/30 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-black/40 sm:w-auto sm:px-8 sm:py-3.5">
                     <span className="relative z-10 flex items-center justify-center gap-2">
                       Browse Tyres
@@ -224,7 +224,7 @@ function LandingPage() {
               Select a segment to explore sizes, rims, and tread patterns tailored to your needs.
             </p>
           </div>
-          <div className="mt-10 grid grid-cols-2 gap-3 sm:mt-16 sm:gap-6 lg:grid-cols-3">
+          <div className="mt-10 grid grid-cols-2 gap-5 sm:mt-16 sm:gap-6 lg:grid-cols-3">
             {products.map((item, index) => (
               <article
                 key={item.title}
@@ -271,50 +271,50 @@ function LandingPage() {
               </div>
 
               {/* Surrounding Country Flags - Smaller on mobile, larger on desktop */}
-              <div className="absolute left-[2%] top-[5%]">
-                <div className="float-circular text-4xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '10s', animationDelay: '0s' }}>
+              <div className="absolute left-[2%] top-[15%]">
+                <div className="float-circular text-5xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '10s', animationDelay: '0s' }}>
                   🇺🇸
                 </div>
               </div>
 
-              <div className="absolute right-[8%] top-[8%]">
-                <div className="float-circular text-4xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '11s', animationDelay: '2s' }}>
+              <div className="absolute right-[8%] top-[12%]">
+                <div className="float-circular text-5xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '11s', animationDelay: '2s' }}>
                   🇬🇧
                 </div>
               </div>
 
-              <div className="absolute right-[3%] top-[55%]">
-                <div className="float-circular text-3xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '13s', animationDelay: '3s' }}>
+              <div className="absolute right-[3%] top-[48%] hidden md:block">
+                <div className="float-circular text-5xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '13s', animationDelay: '3s' }}>
                   🇩🇪
                 </div>
               </div>
 
               <div className="absolute bottom-[12%] right-[5%]">
-                <div className="float-circular text-4xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '11.5s', animationDelay: '1s' }}>
+                <div className="float-circular text-5xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '11.5s', animationDelay: '1s' }}>
                   🇦🇺
                 </div>
               </div>
 
               <div className="absolute bottom-[3%] left-[45%]">
-                <div className="float-circular text-3xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '10.5s', animationDelay: '4s' }}>
+                <div className="float-circular text-5xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '10.5s', animationDelay: '4s' }}>
                   🇧🇷
                 </div>
               </div>
 
               <div className="absolute bottom-[10%] left-[8%]">
-                <div className="float-circular text-4xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '12.5s', animationDelay: '2.5s' }}>
+                <div className="float-circular text-5xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '12.5s', animationDelay: '2.5s' }}>
                   🇯🇵
                 </div>
               </div>
 
-              <div className="absolute left-[3%] top-[58%]">
-                <div className="float-circular text-3xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '11.2s', animationDelay: '1.5s' }}>
+              <div className="absolute right-[45%] top-[2%]">
+                <div className="float-circular text-5xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '11.2s', animationDelay: '1.5s' }}>
                   🇮🇳
                 </div>
               </div>
 
-              <div className="absolute right-[45%] top-[2%]">
-                <div className="float-circular text-3xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '12.8s', animationDelay: '3.5s' }}>
+              <div className="absolute left-[2%] top-[48%] hidden md:block">
+                <div className="float-circular text-5xl transition-all hover:scale-110 md:text-6xl lg:text-8xl" style={{ animationDuration: '12.8s', animationDelay: '3.5s' }}>
                   🇨🇦
                 </div>
               </div>
