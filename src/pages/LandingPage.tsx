@@ -139,7 +139,10 @@ function LandingPage() {
             />
             <div
               className="absolute inset-0 z-10"
-              style={{ backgroundColor: 'rgba(0, 0, 0, 0.75)' }}
+              // style={{ backgroundColor: 'rgba(0, 0, 0, 0.75)' }}
+              style={{
+                background: 'radial-gradient(circle at center, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.85) 100%)',
+              }}
             />
           </div>
 
@@ -201,7 +204,7 @@ function LandingPage() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                       </svg>
                     </span>
-                    <div className="absolute inset-0 -z-0 bg-gradient-to-r from-neutral-50 to-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+                    <div className="absolute inset-0 z-0 bg-linear-to-r from-neutral-50 to-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
                   </button>
                   <button className="group w-full rounded-full border-2 border-white/60 bg-white/10 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-black/20 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-white hover:bg-white/20 hover:shadow-xl hover:shadow-black/30 sm:w-auto sm:px-8 sm:py-3.5">
                     <span className="flex items-center justify-center gap-2">
