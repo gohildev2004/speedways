@@ -87,7 +87,7 @@ function LandingPage() {
               muted
               playsInline
               preload="auto"
-              className="absolute inset-0 z-0 h-full w-full object-contain object-center md:object-cover"
+              className="absolute inset-0 z-0 h-full w-full object-cover"
               src={introVideo}
             />
             <div
