@@ -96,9 +96,9 @@ function LandingPage() {
             />
           </div>
 
-          <header className="relative z-10 flex min-h-screen flex-col px-[6vw] pb-20 pt-14 text-white">
-            <nav className="flex items-center justify-between gap-6">
-              <div className="text-sm font-semibold uppercase tracking-[0.2em]">
+          <header className="relative z-10 flex min-h-screen flex-col px-4 pb-16 pt-6 text-white sm:px-[6vw] sm:pb-20 sm:pt-14">
+            <nav className="flex items-center justify-between gap-3 sm:gap-6">
+              <div className="text-xs font-semibold uppercase tracking-[0.15em] sm:text-sm sm:tracking-[0.2em]">
                 SpeedWays Tyres
               </div>
               <div className="hidden items-center gap-6 text-sm text-white/80 md:flex">
@@ -112,16 +112,16 @@ function LandingPage() {
                   Contact
                 </a>
               </div>
-              <button className="rounded-full border border-white/60 bg-white/10 px-5 py-2 text-sm text-white transition hover:-translate-y-0.5">
+              <button className="rounded-full border border-white/60 bg-white/10 px-3 py-1.5 text-xs text-white transition hover:-translate-y-0.5 sm:px-5 sm:py-2 sm:text-sm">
                 Download Catalogue
               </button>
             </nav>
 
-            <div className="flex flex-1 items-center justify-center pt-16">
-              <div className="max-w-3xl space-y-8 text-center">
+            <div className="flex flex-1 items-center justify-center pt-12 sm:pt-16">
+              <div className="max-w-3xl space-y-6 px-2 text-center sm:space-y-8">
                 {/* Heading */}
                 <h1
-                  className="text-5xl font-bold leading-[1.1] tracking-tight md:text-6xl xl:text-7xl"
+                  className="text-3xl font-bold leading-[1.15] tracking-tight sm:text-4xl md:text-6xl xl:text-7xl"
                   style={{
                     textShadow: '0 12px 40px rgba(0, 0, 0, 0.6), 0 4px 16px rgba(0, 0, 0, 0.4)',
                   }}
@@ -135,7 +135,7 @@ function LandingPage() {
 
                 {/* Description */}
                 <p
-                  className="text-lg leading-relaxed text-white/90 md:text-xl md:leading-relaxed"
+                  className="text-base leading-relaxed text-white/90 sm:text-lg md:text-xl md:leading-relaxed"
                   style={{ textShadow: '0 8px 24px rgba(0, 0, 0, 0.5)' }}
                 >
                   We manufacture radial and bias tyres for agriculture, industrial
@@ -146,9 +146,9 @@ function LandingPage() {
                 </p>
 
                 {/* CTA Buttons */}
-                <div className="flex flex-wrap justify-center gap-4">
-                  <button className="group relative overflow-hidden rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-neutral-900 shadow-lg shadow-black/30 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-black/40">
-                    <span className="relative z-10 flex items-center gap-2">
+                <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
+                  <button className="group relative w-full overflow-hidden rounded-full bg-white px-6 py-3 text-sm font-semibold text-neutral-900 shadow-lg shadow-black/30 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-black/40 sm:w-auto sm:px-8 sm:py-3.5">
+                    <span className="relative z-10 flex items-center justify-center gap-2">
                       Browse Tyres
                       <svg className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -156,8 +156,8 @@ function LandingPage() {
                     </span>
                     <div className="absolute inset-0 -z-0 bg-gradient-to-r from-neutral-50 to-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
                   </button>
-                  <button className="group rounded-full border-2 border-white/60 bg-white/10 px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-black/20 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-white hover:bg-white/20 hover:shadow-xl hover:shadow-black/30">
-                    <span className="flex items-center gap-2">
+                  <button className="group w-full rounded-full border-2 border-white/60 bg-white/10 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-black/20 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-white hover:bg-white/20 hover:shadow-xl hover:shadow-black/30 sm:w-auto sm:px-8 sm:py-3.5">
+                    <span className="flex items-center justify-center gap-2">
                       Find a Tyre
                       <svg className="h-4 w-4 transition-transform duration-300 group-hover:rotate-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -170,17 +170,17 @@ function LandingPage() {
           </header>
         </div>
 
-        <section id="featured" className="px-[6vw] py-10">
+        <section id="featured" className="px-4 py-8 sm:px-[6vw] sm:py-10">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div>
               <p className="text-xs uppercase tracking-[0.3em] text-neutral-400">
                 Featured
               </p>
-              <h2 className="mt-1 text-2xl font-semibold text-white md:text-3xl">
+              <h2 className="mt-1 text-xl font-semibold text-white sm:text-2xl md:text-3xl">
                 New performance patterns now live
               </h2>
             </div>
-            <button className="text-sm font-semibold text-white underline underline-offset-4">
+            <button className="text-xs font-semibold text-white underline underline-offset-4 sm:text-sm">
               View all
             </button>
           </div>
@@ -212,30 +212,30 @@ function LandingPage() {
 
         <div className="h-px bg-neutral-800"></div>
 
-        <section id="products" className="px-[6vw] py-20">
-          <div className="mx-auto max-w-4xl text-center">
+        <section id="products" className="px-4 py-12 sm:px-[6vw] sm:py-20">
+          <div className="mx-auto max-w-4xl px-2 text-center">
             <p className="text-xs uppercase tracking-[0.3em] text-neutral-400">
               Product Range
             </p>
-            <h2 className="mt-4 text-3xl font-semibold text-white md:text-4xl">
+            <h2 className="mt-4 text-2xl font-semibold text-white sm:text-3xl md:text-4xl">
               Explore Tyre Categories
             </h2>
-            <p className="mt-4 text-base text-neutral-400 md:text-lg">
+            <p className="mt-4 text-sm text-neutral-400 sm:text-base md:text-lg">
               Select a segment to explore sizes, rims, and tread patterns tailored to your needs.
             </p>
           </div>
-          <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid gap-4 sm:mt-16 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
             {products.map((item, index) => (
               <article
                 key={item.title}
-                className="group relative overflow-hidden rounded-2xl  bg-neutral-900/50 p-8 backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-neutral-700 hover:bg-neutral-900"
+                className="group relative overflow-hidden rounded-2xl bg-neutral-900/50 p-6 backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-neutral-700 hover:bg-neutral-900 sm:p-8"
               >
-                <div className="mb-4 flex items-center justify-between">
-                  <span className="flex h-10 w-10 items-center justify-center rounded-full bg-neutral-800 text-sm font-semibold text-neutral-400 transition-colors group-hover:bg-neutral-700 group-hover:text-white">
+                <div className="mb-3 flex items-center justify-between sm:mb-4">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-neutral-800 text-xs font-semibold text-neutral-400 transition-colors group-hover:bg-neutral-700 group-hover:text-white sm:h-10 sm:w-10 sm:text-sm">
                     {String(index + 1).padStart(2, '0')}
                   </span>
                   <svg
-                    className="h-5 w-5 text-neutral-600 transition-all duration-300 group-hover:translate-x-1 group-hover:text-neutral-400"
+                    className="h-4 w-4 text-neutral-600 transition-all duration-300 group-hover:translate-x-1 group-hover:text-neutral-400 sm:h-5 sm:w-5"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -243,8 +243,8 @@ function LandingPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-semibold text-white">{item.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-neutral-400">
+                <h3 className="text-base font-semibold text-white sm:text-lg">{item.title}</h3>
+                <p className="mt-2 text-xs leading-relaxed text-neutral-400 sm:mt-3 sm:text-sm">
                   {item.description}
                 </p>
               </article>
@@ -254,67 +254,67 @@ function LandingPage() {
 
         <div className="h-px bg-neutral-800"></div>
 
-        <section id="about" className="px-[6vw] py-20">
+        <section id="about" className="px-4 py-12 sm:px-[6vw] sm:py-20">
           <div className="mx-auto max-w-6xl">
-            <div className="relative flex min-h-[600px] items-center justify-center py-16">
+            <div className="relative flex min-h-[400px] items-center justify-center py-12 sm:min-h-[600px] sm:py-16">
               {/* Center Text Content */}
-              <div className="relative z-10 max-w-2xl text-center">
+              <div className="relative z-10 max-w-2xl px-4 text-center">
                 <p className="text-xs uppercase tracking-[0.3em] text-neutral-400">
                   Global Reach
                 </p>
-                <h2 className="mt-4 text-4xl font-bold text-white md:text-5xl lg:text-6xl">
+                <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl">
                   Shipped to 100+ Countries Worldwide
                 </h2>
-                <p className="mt-6 text-lg text-neutral-400 md:text-xl">
+                <p className="mt-6 text-base text-neutral-400 sm:text-lg md:text-xl">
                   Trusted by distributors and businesses across six continents
                 </p>
               </div>
 
-              {/* Surrounding Country Flags - Scattered */}
-              <div className="absolute left-[5%] top-[8%]">
-                <div className="float-circular text-8xl transition-all hover:scale-110" style={{ animationDuration: '10s', animationDelay: '0s' }}>
+              {/* Surrounding Country Flags - Scattered - Hidden on mobile */}
+              <div className="absolute left-[5%] top-[8%] hidden md:block">
+                <div className="float-circular text-6xl transition-all hover:scale-110 lg:text-8xl" style={{ animationDuration: '10s', animationDelay: '0s' }}>
                   🇺🇸
                 </div>
               </div>
 
-              <div className="absolute right-[15%] top-[12%]">
-                <div className="float-circular text-8xl transition-all hover:scale-110" style={{ animationDuration: '11s', animationDelay: '2s' }}>
+              <div className="absolute right-[15%] top-[12%] hidden md:block">
+                <div className="float-circular text-6xl transition-all hover:scale-110 lg:text-8xl" style={{ animationDuration: '11s', animationDelay: '2s' }}>
                   🇬🇧
                 </div>
               </div>
 
-              <div className="absolute right-[1%] top-[45%]">
-                <div className="float-circular text-8xl transition-all hover:scale-110" style={{ animationDuration: '13s', animationDelay: '3s' }}>
+              <div className="absolute right-[1%] top-[45%] hidden md:block">
+                <div className="float-circular text-6xl transition-all hover:scale-110 lg:text-8xl" style={{ animationDuration: '13s', animationDelay: '3s' }}>
                   🇩🇪
                 </div>
               </div>
 
-              <div className="absolute bottom-[10%] right-[12%]">
-                <div className="float-circular text-8xl transition-all hover:scale-110" style={{ animationDuration: '11.5s', animationDelay: '1s' }}>
+              <div className="absolute bottom-[10%] right-[12%] hidden md:block">
+                <div className="float-circular text-6xl transition-all hover:scale-110 lg:text-8xl" style={{ animationDuration: '11.5s', animationDelay: '1s' }}>
                   🇦🇺
                 </div>
               </div>
 
-              <div className="absolute bottom-[5%] left-[48%]">
-                <div className="float-circular text-8xl transition-all hover:scale-110" style={{ animationDuration: '10.5s', animationDelay: '4s' }}>
+              <div className="absolute bottom-[5%] left-[48%] hidden md:block">
+                <div className="float-circular text-6xl transition-all hover:scale-110 lg:text-8xl" style={{ animationDuration: '10.5s', animationDelay: '4s' }}>
                   🇧🇷
                 </div>
               </div>
 
-              <div className="absolute bottom-[8%] left-[15%]">
-                <div className="float-circular text-8xl transition-all hover:scale-110" style={{ animationDuration: '12.5s', animationDelay: '2.5s' }}>
+              <div className="absolute bottom-[8%] left-[15%] hidden md:block">
+                <div className="float-circular text-6xl transition-all hover:scale-110 lg:text-8xl" style={{ animationDuration: '12.5s', animationDelay: '2.5s' }}>
                   🇯🇵
                 </div>
               </div>
 
-              <div className="absolute left-[1%] top-[48%]">
-                <div className="float-circular text-8xl transition-all hover:scale-110" style={{ animationDuration: '11.2s', animationDelay: '1.5s' }}>
+              <div className="absolute left-[1%] top-[48%] hidden md:block">
+                <div className="float-circular text-6xl transition-all hover:scale-110 lg:text-8xl" style={{ animationDuration: '11.2s', animationDelay: '1.5s' }}>
                   🇮🇳
                 </div>
               </div>
 
-              <div className="absolute right-[50%] top-[3%]">
-                <div className="float-circular text-8xl transition-all hover:scale-110" style={{ animationDuration: '12.8s', animationDelay: '3.5s' }}>
+              <div className="absolute right-[50%] top-[3%] hidden md:block">
+                <div className="float-circular text-6xl transition-all hover:scale-110 lg:text-8xl" style={{ animationDuration: '12.8s', animationDelay: '3.5s' }}>
                   🇨🇦
                 </div>
               </div>
@@ -324,18 +324,18 @@ function LandingPage() {
 
         <div className="h-px bg-neutral-800"></div>
 
-        <section id="about-us" className="px-[6vw] py-20">
+        <section id="about-us" className="px-4 py-12 sm:px-[6vw] sm:py-20">
           <div className="mx-auto max-w-5xl">
             <div className="text-center">
               <p className="text-xs uppercase tracking-[0.3em] text-neutral-400">
                 About Us
               </p>
-              <h2 className="mt-4 text-3xl font-semibold text-white md:text-4xl">
+              <h2 className="mt-4 text-2xl font-semibold text-white sm:text-3xl md:text-4xl">
                 SPEEDWAYS TYRES
               </h2>
             </div>
 
-            <div className="mt-12 space-y-6 text-center text-base leading-relaxed text-neutral-300 md:text-lg md:leading-relaxed">
+            <div className="mt-8 space-y-4 px-2 text-center text-sm leading-relaxed text-neutral-300 sm:mt-12 sm:space-y-6 sm:text-base md:text-lg md:leading-relaxed">
               <p>
                 <span className="font-semibold text-white">SPEEDWAYS TYRES</span> is a part of well known <span className="font-semibold text-white">"SPEEDWAYS GROUP"</span> of Companies in India. Established in <span className="font-semibold text-white">1984</span>, our presence today spans over <span className="font-semibold text-white">100 countries worldwide</span>. We are leading manufacturer of Farm Radial, Agriculture Industrial, OTR, Two / Three Wheeler Tyres, Tubes & Flaps. We also specialize in Pre-Cured & Conventional Tread Rubber.
               </p>
@@ -353,29 +353,29 @@ function LandingPage() {
 
         <div className="h-px bg-neutral-800"></div>
 
-        <section id="contact" className="px-[6vw] pb-20 pt-10">
-          <div className="flex flex-wrap items-center justify-between gap-8 rounded-2xl bg-neutral-900 p-10">
+        <section id="contact" className="px-4 pb-12 pt-8 sm:px-[6vw] sm:pb-20 sm:pt-10">
+          <div className="flex flex-col items-center gap-6 rounded-2xl bg-neutral-900 p-6 text-center sm:flex-row sm:items-center sm:justify-between sm:gap-8 sm:p-10 sm:text-left">
             <div>
-              <h2 className="text-2xl font-semibold text-white md:text-3xl">
+              <h2 className="text-xl font-semibold text-white sm:text-2xl md:text-3xl">
                 Ready to source tyres?
               </h2>
-              <p className="mt-3 text-neutral-400">
+              <p className="mt-3 text-sm text-neutral-400 sm:text-base">
                 Contact SpeedWays Tyres for catalogue access and distributor
                 opportunities.
               </p>
             </div>
-            <button className="rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-neutral-900 transition hover:-translate-y-0.5">
+            <button className="w-full rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-neutral-900 transition hover:-translate-y-0.5 sm:w-auto">
               Contact Sales
             </button>
           </div>
-          <p className="mt-6 text-sm text-neutral-500">
+          <p className="mt-6 text-center text-xs text-neutral-500 sm:text-sm">
             write2us@speedwaystyres.com · +91 98156 50501
           </p>
         </section>
 
-        <footer className="flex flex-wrap items-center justify-between gap-4 border-t border-neutral-800 px-[6vw] py-8 text-sm text-neutral-500">
+        <footer className="flex flex-col items-center justify-center gap-4 border-t border-neutral-800 px-4 py-6 text-center text-xs text-neutral-500 sm:flex-row sm:justify-between sm:px-[6vw] sm:py-8 sm:text-sm">
           <p>© SpeedWays Tyres. All rights reserved.</p>
-          <div className="flex flex-wrap gap-5">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-5">
             <a href="#" className="transition hover:text-neutral-400">Privacy Policy</a>
             <a href="#" className="transition hover:text-neutral-400">Terms & Conditions</a>
             <a href="#" className="transition hover:text-neutral-400">Careers</a>
