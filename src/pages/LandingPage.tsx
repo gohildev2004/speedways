@@ -155,11 +155,11 @@ function LandingPage() {
                 <a className="transition hover:text-white" href="#products">
                   Products
                 </a>
-                <a className="transition hover:text-white" href="#featured">
-                  Featured
-                </a>
                 <a className="transition hover:text-white" href="#contact">
                   Contact
+                </a>
+                <a className="transition hover:text-white" href="#journey">
+                  Journey
                 </a>
               </div>
               <button className="rounded-full border border-white/60 bg-white/10 px-3 py-1.5 text-xs text-white transition hover:-translate-y-0.5 sm:px-5 sm:py-2 sm:text-sm">
@@ -238,7 +238,7 @@ function LandingPage() {
             {featuredProducts.map((item) => (
               <article
                 key={item.name}
-                className="min-w-[230px] flex-1 rounded-2xl border border-neutral-800 bg-neutral-900 p-4"
+                className="min-w-57.5 flex-1 rounded-2xl border border-neutral-800 bg-neutral-900 p-4"
               >
                 <div className="relative p-6">
                   <img
@@ -306,7 +306,7 @@ function LandingPage() {
 
         <section id="about" className="px-4 py-12 sm:px-[6vw] sm:py-20">
           <div className="mx-auto max-w-6xl">
-            <div className="relative flex min-h-[450px] items-center justify-center py-12 sm:min-h-[600px] sm:py-16">
+            <div className="relative flex min-h-112.5 items-center justify-center py-12 sm:min-h-150 sm:py-16">
               {/* Center Text Content */}
               <div className="relative z-10 max-w-2xl px-4 text-center">
                 <p className="text-xs uppercase tracking-[0.3em] text-neutral-400">
