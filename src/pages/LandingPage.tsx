@@ -141,7 +141,7 @@ function LandingPage() {
               className="absolute inset-0 z-10"
               // style={{ backgroundColor: 'rgba(0, 0, 0, 0.75)' }}
               style={{
-                background: 'radial-gradient(circle at center, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.85) 100%)',
+                background: 'radial-gradient(circle at center, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.75) 100%)',
               }}
             />
           </div>
